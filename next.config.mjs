@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.NODE_ENV === 'production' && process.env.GITHUB_PAGES === 'true'
+
 const nextConfig = {
   output: 'export',
-  basePath: '/Currency-Converter',
-  assetPrefix: '/Currency-Converter/',
+  basePath: isGithubPages ? '/Currency-Converter' : '',
+  assetPrefix: isGithubPages ? '/Currency-Converter/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
