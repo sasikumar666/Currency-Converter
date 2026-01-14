@@ -1,4 +1,5 @@
 {
+   "homepage" : "https://sasikumar666.github.io/Currency-Converter/",
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+      "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
